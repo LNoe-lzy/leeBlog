@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LeeBlog</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="nav-bar">
+    <span class="nav-home"><a href="/" title="主页">博</a> </span>
+    <span><a href="/archive" title="存档"><img src="/images/arc.png"></a> </span>
+    <span><a href="/links" title="友情链接"><img src="/images/link.png"></a> </span>
+    <% if (user) { %>
+    <span><a href="/upload" title="上传"><img src="/images/log.png"></a> </span>
+    <span><a href="/post" title="发表"><img src="/images/post.png"></a> </span>
+    <span><a href="/logout" title="退出"><img src="/images/logout.png"></a> </span>
+    <% } else { %>
+    <span><a href="/login" title="登录"><img src="/images/login.png"></a> </span>
+    <span><a href="/reg" title="注册"><img src="/images/reg.png"> </a> </span>
+    <% } %>
+</div>
+    <div class="con">
+        <div class="con-left">
+            <div class="search">
+                <span>
+                    <form action="/search" method="get">
+                        <div class="form-group">
+                            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                            <input type="text" name="keyword" placeholder="搜索" class="form-control">
+                        </div>
+                    </form>
+                </span>
+            </div>
+            <div class="con-left-con">
+                <h1><%= title %></h1>
+            </div>
+        </div>
+        <div class="con-right">
+            <% if (success) { %>
+            <div><%= success %></div>
+            <% } %>
+            <% if (error) { %>
+            <div><%= error %></div>
+        <% } %>

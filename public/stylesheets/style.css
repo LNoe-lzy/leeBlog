@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0 auto;
+}
+a:hover{
+  text-decoration: none;
+}
+.nav-bar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background: #2a2a2a;
+  overflow: visible;
+  z-index: 1000;
+}
+.nav-bar span{
+  display: block;
+  padding: 10px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-bar span:hover{
+  background: #e78170;
+}
+.nav-home{
+  background-color: #de533a;
+  color: white;
+  text-shadow: 0 1px 0 #e78170;
+  font-size: 18px;
+}
+.nav-home a{
+  color: white;
+}
+.con{
+  width: 100%;
+  position: relative;
+  padding-left: 50px;
+}
+.con-left{
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 50px;
+  width: 25%;
+  background-image: url("../images/bg1.jpg");
+  overflow: hidden;
+}
+.con-right{
+  margin-left: 26%;
+  height: 100%;
+  padding: 25px;
+}
+.con-left-con{
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  color: white;
+}
+.con-right-post{
+  padding-right: 100px;
+}
+.post-info{
+  border-bottom: 1px dashed #d9d9d9;
+  max-height: 130px;
+  overflow: hidden;
+}
+.info-title a{
+  color: #555555;
+}
+.info-title a:hover{
+  color: black;
+}
+.right-form{
+  width: 60%;
+  margin: 0 auto;
+}
+.title{
+  border-bottom: 1px solid #eeeeee;
+  color: #b1b1b1;
+  font-size: 17.5px;
+  margin: 70px auto 50px;
+}
+.title span{
+  position: relative;
+  top: 10px;
+  padding: 0 30px;
+  background: white;
+}
+.title span a.active{
+  color: #b1b1b1;
+}
+.title span a{
+  color: #555555;
+}
+.archive{
+  list-style: none;
+  line-height: 28px;
+}
+.archive h3{
+  margin:0.5em 0;
+}
+.archive time{
+  float: left;
+  font-size: 14px;
+  color: #999999;
+  margin-right: 1.2em;
+}
+.tag{
+  color: #e78170;
+}
+.tag:hover{
+  color: #de533a;
+}
+.edit{
+  color: #e78170;
+}
+.edit:hover{
+  color: #de533a;
+}
